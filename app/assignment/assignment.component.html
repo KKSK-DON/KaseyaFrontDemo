@@ -1,0 +1,18 @@
+<nz-tabset *ngIf="Type == '0' || Type == '1'">
+  <nz-tab nzTitle="Teacher">
+    <app-teacher></app-teacher>
+  </nz-tab>
+  <nz-tab nzTitle="Student">
+    <app-student></app-student>
+  </nz-tab>
+  <nz-tab nzTitle="Assignment">
+    <app-assignments></app-assignments>
+  </nz-tab>
+</nz-tabset>
+<div *ngIf="Type === '2' || Type === '-1'">
+  <nz-result
+    nzStatus="warning"
+    nzTitle="You do not have the permission to see the details"
+  >
+  </nz-result>
+</div>
