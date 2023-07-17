@@ -46,3 +46,7 @@ nz-footer {
   height: 32px;
   line-height: 32px;
 }
+.login-link {
+  font-size: inherit; /* This will make the font size the same as the parent element */
+  font-weight: bold; /* This will make the text bold */
+}

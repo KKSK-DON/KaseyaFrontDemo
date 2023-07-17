@@ -10,6 +10,6 @@ export class CardComponent {
   constructor(private router: Router) {}
   change() {
     this.router.navigate(['/assignment']);
-    localStorage.setItem('Type', '2');
+    localStorage.setItem('Type', '-1');
   }
 }

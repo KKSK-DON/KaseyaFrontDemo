@@ -9,10 +9,18 @@
     <app-assignments></app-assignments>
   </nz-tab>
 </nz-tabset>
-<div *ngIf="Type === '2' || Type === '-1'">
+<div *ngIf="Type === '2'">
   <nz-result
-    nzStatus="warning"
-    nzTitle="You do not have the permission to see the details"
+    nzStatus="403"
+    nzTitle="Sorry, you are not authorized to access this page."
   >
+  </nz-result>
+</div>
+<div *ngIf="Type === '-1'">
+  <nz-result nzStatus="error">
+    <div nz-result-title>
+      You are not logged in. Please
+      <a routerLink="/login" class="login-link">Login</a>.
+    </div>
   </nz-result>
 </div>

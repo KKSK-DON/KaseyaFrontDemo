@@ -24,6 +24,7 @@ import { AssignmentsComponent } from './assignment/assignments/assignments.compo
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzResultModule } from 'ng-zorro-antd/result';
+import { LoginComponent } from './login/login.component';
 
 registerLocaleData(en);
 
@@ -35,6 +36,7 @@ registerLocaleData(en);
     TeacherComponent,
     StudentComponent,
     AssignmentsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
